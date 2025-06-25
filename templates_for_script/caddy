@@ -1,3 +1,9 @@
+(remove_headers) {
+        header /* {
+                -Server
+                -etag
+        }
+}
 {
         https_port 4123
         default_bind 127.0.0.1
@@ -13,16 +19,20 @@
 }
 https://$VLESS_DOMAIN {
         $CADDY_REVERSE
+        import remove_headers
 }
 http://$VLESS_DOMAIN {
         bind 0.0.0.0
         redir https://$VLESS_DOMAIN{uri} permanent
+        import remove_headers
 }
 :4123 {
         tls internal
         respond 204
+        import remove_headers
 }
 :80 {
         bind 0.0.0.0
         respond 204
+        import remove_headers
 }
