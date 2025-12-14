@@ -101,7 +101,7 @@ URL подписок
 ```yaml
 services:
   caddy:
-    image: caddy:2.9
+    image: caddy:2.11
     restart: always
     network_mode: host
     volumes:
@@ -125,7 +125,7 @@ services:
 ```yaml
 services:
   caddy:
-    image: caddy:2.9
+    image: caddy:2.11
     restart: always
     network_mode: host
     volumes:
@@ -133,7 +133,7 @@ services:
       - ./caddy/Caddyfile:/etc/caddy/Caddyfile
       - ./caddy/templates:/srv
   xray:
-    image: ghcr.io/xtls/xray-core:25.1.1
+    image: ghcr.io/xtls/xray-core:25.12.8
     restart: always
     network_mode: host
     volumes:

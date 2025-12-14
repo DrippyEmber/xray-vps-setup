@@ -20,10 +20,12 @@ https://{{ domain }} {
 {% endif %}
   header {
     -Server
+    -etag
   }
   handle_errors {
     header {
       -Server
+      -etag
     }
   }
 }
@@ -33,10 +35,12 @@ http://{{ domain }} {
 
   header {
     -Server
+    -etag
   }
   handle_errors {
     header {
       -Server
+      -etag
     }
   }
 }
