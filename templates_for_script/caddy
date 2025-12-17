@@ -16,10 +16,12 @@ https://$VLESS_DOMAIN {
 
         header  {
                 -Server
+                -etag
         }
         handle_errors {
                 header {
                         -Server
+                        -etag
                 }
         }
 }
@@ -29,11 +31,13 @@ http://$VLESS_DOMAIN {
 
         header {
                 -Server
+                -etag
         }
 
         handle_errors {
                 header {
                         -Server
+                        -etag
                 }
         }
 }
