@@ -43,17 +43,4 @@ bash <(wget -qO- https://github.com/legiz-ru/marz-sub/raw/main/marz-sub.sh)
 
 ## Ручная установка
 
-Описана [здесь](https://github.com/Akiyamov/xray-vps-setup/blob/main/install_in_docker.md).  
-
-## Почему не nginx, haproxy, 3x-ui, x-ui, sing-box...
-
-Caddy сам получит сертификаты, поэтому нам не придется их получать через `acme.sh` или `certbot`.  
-3X-ui мерзотная панель.  
-Sing-box не очень.  
-XHTTP позже, а больше не надо. Уже точно. 
-
-## Связь
-Issues, PR ну или мой [тг](https://t.me/Akiyamov).
-
-> [!IMPORTANT]
-> Дайте секс
+Описана [здесь](https://github.com/DrippyEmber/xray-vps-setup/blob/main/install_in_docker.md).
